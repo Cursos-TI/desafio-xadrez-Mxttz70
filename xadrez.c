@@ -5,6 +5,7 @@ int main() {
     const int casas_torre = 5;
     const int casas_bispo = 5;
     const int casas_rainha = 8;
+    const int movimentos_cavalo = 1; // O Cavalo fará um movimento "L"
 
     // Movimento da Torre: 5 casas para a direita
     printf("Movimento da Torre:\n");
@@ -27,6 +28,17 @@ int main() {
         printf("Esquerda\n");
         k++;
     } while (k < casas_rainha);
+
+    // Movimento do Cavalo: 2 casas para baixo e 1 casa para a esquerda
+    printf("\nMovimento do Cavalo:\n");
+    for (int i = 0; i < movimentos_cavalo; i++) {
+        // Movimento para baixo
+        for (int m = 0; m < 2; m++) {
+            printf("Baixo\n");
+        }
+        // Movimento para a esquerda
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
